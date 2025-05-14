@@ -1,0 +1,35 @@
+  <title>Jogo Edu - Do Campo à Mesa | Agrinho 2025</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app" role="main" aria-label="Jogo Educativo sobre Produção Agrícola">
+    <button id="audio-toggle" aria-pressed="true" aria-label="Desativar sons do jogo" title="Desativar sons">
+      <svg class="icon-sound-on" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6h4l5 5V4L7 9H3zM16.5 12c0-1.77-1.02-3.29-2.5-4.03v8.06c1.48-.74 2.5-2.26 2.5-4.03zM16.5 3.31v1.72c2.89 1.03 4.99 3.91 4.99 7.48s-2.1 6.45-4.99 7.48v1.72c4.01-1.12 7-4.73 7-9.2s-2.99-8.08-7-9.2z"/></svg>
+      <svg class="icon-sound-off" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" style="display:none;"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v8.06c1.48-.74 2.5-2.26 2.5-4.03zM19 12c0 2.89-2.1 6.45-5 7.48v-4.34l-4.5 4.5v-11l4.5 4.5v-4.34c2.9 1.03 5 4.59 5 7.2zM2 4l2.28 2.28 15.44 15.44-1.41 1.41-4.28-4.28-3.56 3.56v-11.1l-3.08-3.08L2 4z"/></svg>
+    </button>
+    <h1>Do Campo à Mesa</h1>
+    <div class="subtitle">Jogo Educativo - Agrinho 2025</div>
+    <!-- Login Section -->
+    <section id="login-section" class="section active-section" aria-label="Página de login para o jogo">
+      <p>Por favor, digite seu nome para começar:</p>
+      <input id="input-name" type="text" aria-required="true" aria-label="Campo para digitar nome" placeholder="Seu nome aqui" />
+      <button id="login-btn" aria-label="Entrar no jogo">Entrar</button>
+    </section>
+    <!-- Game Section -->
+    <section id="game-section" class="section" aria-live="polite" aria-atomic="true" aria-label="Área do jogo com perguntas e opções">
+      <div id="progress-bar" aria-hidden="true"><div id="progress"></div></div>
+      <div id="question"></div>
+      <div id="options" role="list"></div>
+      <div id="feedback" aria-live="assertive"></div>
+      <button id="next-btn" style="display:none;" aria-label="Próxima etapa do jogo">Próxima etapa</button>
+    </section>
+    <!-- Result Section -->
+    <section id="result-section" class="section" aria-label="Seção do resultado final do jogo">
+      <div id="final-message" aria-live="polite"></div>
+      <div id="score" aria-live="polite"></div>
+      <button id="restart-btn" aria-label="Reiniciar o jogo" >Jogar novamente</button>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
